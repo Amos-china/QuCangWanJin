@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QCHomeTopHBView">
+            <connections>
+                <outlet property="moneyLabel" destination="8L4-fs-GnD" id="ggN-37-S4v"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="87"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_cg_top_hb_im" translatesAutoresizingMaskIntoConstraints="NO" id="2Bb-0A-lO1">
+                    <rect key="frame" x="9.9999999999999982" y="30.333333333333336" width="22.333333333333329" height="26.333333333333336"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="leble leble leble leble leble leble leble leble" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8L4-fs-GnD">
+                    <rect key="frame" x="35.333333333333343" y="34" width="118" height="19.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qz9-SF-zSL">
+                    <rect key="frame" x="159.33333333333334" y="30.666666666666664" width="38.666666666666657" height="25.666666666666664"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="提现" backgroundImage="home_cg_top_tx_btn">
+                        <color key="titleColor" red="0.86568331720000002" green="0.32569146160000001" blue="0.29907512660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="txButtonAction:" destination="-1" eventType="touchUpInside" id="xT5-jt-IeX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.8690852523" green="0.32560870050000001" blue="0.30320626499999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qz9-SF-zSL" secondAttribute="trailing" constant="10" id="Man-dQ-Q3x"/>
+                <constraint firstItem="8L4-fs-GnD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SC5-6R-esx"/>
+                <constraint firstItem="qz9-SF-zSL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TbH-g7-hB0"/>
+                <constraint firstItem="qz9-SF-zSL" firstAttribute="leading" secondItem="8L4-fs-GnD" secondAttribute="trailing" constant="6" id="aq2-3k-dXN"/>
+                <constraint firstItem="2Bb-0A-lO1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="iPF-gH-XDi"/>
+                <constraint firstItem="2Bb-0A-lO1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sw7-4g-i4o"/>
+                <constraint firstItem="8L4-fs-GnD" firstAttribute="leading" secondItem="2Bb-0A-lO1" secondAttribute="trailing" constant="3" id="v3W-mv-CyR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="fixCorner">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-198.47328244274809" y="159.50704225352112"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_cg_top_hb_im" width="22.333333969116211" height="26.333333969116211"/>
+        <image name="home_cg_top_tx_btn" width="38.666667938232422" height="25.666666030883789"/>
+    </resources>
+</document>

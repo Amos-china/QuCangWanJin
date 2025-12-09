@@ -1,0 +1,197 @@
+PODS:
+  - Ads-CN-Beta/BUAdLive (7.2.0.6)
+  - Ads-CN-Beta/BUAdLive-Framework (7.2.0.6):
+    - Ads-CN-Beta/BUAdLive
+    - BUTTSDKFramework/LivePull-Lite (= 1.46.2.7-premium)
+  - Ads-CN-Beta/BUAdSDK (7.2.0.6)
+  - Ads-CN-Beta/CSJMediation (7.2.0.6):
+    - Ads-CN-Beta/BUAdLive-Framework
+    - Ads-CN-Beta/CSJMediation-Only
+  - Ads-CN-Beta/CSJMediation-Only (7.2.0.6):
+    - Ads-CN-Beta/BUAdSDK
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - BaiduMobAdSDK (10.02)
+  - BDASignalSDK (1.0.6)
+  - BUTTSDKFramework/Core (1.46.2.7-premium)
+  - BUTTSDKFramework/LiveBase (1.46.2.7-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/LivePlayer/Base (1.46.2.7-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/LiveBase
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/LivePlayer/Lite (1.46.2.7-premium):
+    - BUTTSDKFramework/LivePlayer/Base
+    - BUTTSDKFramework/PlayerCore/LiveLite
+  - BUTTSDKFramework/LivePull-Lite (1.46.2.7-premium):
+    - BUTTSDKFramework/LivePlayer/Lite
+    - BUTTSDKFramework/Strategy/Lite
+  - BUTTSDKFramework/PlayerCore/Base (1.46.2.7-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/Tools
+  - BUTTSDKFramework/PlayerCore/LiveLite (1.46.2.7-premium):
+    - BUTTSDKFramework/PlayerCore/Base
+    - BUTTSDKFramework/TTFFmpeg/LiveLite
+  - BUTTSDKFramework/Reachability (1.46.2.7-premium)
+  - BUTTSDKFramework/SSL (1.46.2.7-premium)
+  - BUTTSDKFramework/Strategy/Core (1.46.2.7-premium):
+    - BUTTSDKFramework/LiveBase
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/Strategy/Lite (1.46.2.7-premium):
+    - BUTTSDKFramework/LivePlayer/Lite
+    - BUTTSDKFramework/Strategy/Core
+  - BUTTSDKFramework/Tools (1.46.2.7-premium):
+    - BUTTSDKFramework/SSL
+  - BUTTSDKFramework/TTFFmpeg/Base (1.46.2.7-premium):
+    - BUTTSDKFramework/Tools
+  - BUTTSDKFramework/TTFFmpeg/LiveLite (1.46.2.7-premium):
+    - BUTTSDKFramework/TTFFmpeg/Base
+  - FMDB (2.7.12):
+    - FMDB/standard (= 2.7.12)
+  - FMDB/Core (2.7.12)
+  - FMDB/standard (2.7.12):
+    - FMDB/Core
+  - GDTMobSDK (4.15.60)
+  - GMBaiduAdapter-Beta (10.02.0):
+    - Ads-CN-Beta/CSJMediation-Only (>= 7.2.0.6)
+  - GMGdtAdapter-Beta (4.15.60.0):
+    - Ads-CN-Beta/CSJMediation-Only (>= 7.2.0.6)
+  - GMKsAdapter-Beta (4.9.20.1.0):
+    - Ads-CN-Beta/CSJMediation-Only (>= 7.2.0.6)
+  - GMSigmobAdapter-Beta (4.20.3.0):
+    - Ads-CN-Beta/CSJMediation-Only (>= 7.2.0.6)
+  - HJDanmaku (2.0.6)
+  - IQKeyboardManager (6.5.19)
+  - KSAdSDK (4.9.20.1)
+  - lottie-ios_Oc (0.0.1)
+  - Masonry (1.1.0)
+  - MJExtension (3.4.2)
+  - MMKV (2.2.4):
+    - MMKVCore (~> 2.2.4)
+  - MMKVCore (2.2.4)
+  - Protobuf (4.33.0)
+  - SDWebImage (5.21.3):
+    - SDWebImage/Core (= 5.21.3)
+  - SDWebImage/Core (5.21.3)
+  - SigmobAd-iOS (4.20.3):
+    - SigmobAd-iOS/WindSDK (= 4.20.3)
+  - SigmobAd-iOS/WindSDK (4.20.3)
+  - STPopup (1.8.7)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+  - UICountingLabel (1.4.1)
+  - UMCommon (7.5.5):
+    - UMDevice
+  - UMDevice (3.4.0)
+  - WechatOpenSDK-XCFramework (2.0.5)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - Ads-CN-Beta/CSJMediation (= 7.2.0.6)
+  - AFNetworking (~> 4.0.1)
+  - BaiduMobAdSDK (= 10.02)
+  - BDASignalSDK
+  - FMDB
+  - GDTMobSDK (= 4.15.60)
+  - GMBaiduAdapter-Beta (= 10.02.0)
+  - GMGdtAdapter-Beta (= 4.15.60.0)
+  - GMKsAdapter-Beta (= 4.9.20.1.0)
+  - GMSigmobAdapter-Beta (= 4.20.3.0)
+  - HJDanmaku
+  - IQKeyboardManager
+  - KSAdSDK (= 4.9.20.1)
+  - lottie-ios_Oc
+  - Masonry
+  - MJExtension
+  - MMKV
+  - Protobuf
+  - SDWebImage
+  - SigmobAd-iOS (= 4.20.3)
+  - STPopup
+  - SVProgressHUD
+  - UICountingLabel
+  - UMCommon (~> 7.5.5)
+  - WechatOpenSDK-XCFramework
+  - YYText
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Ads-CN-Beta
+    - AFNetworking
+    - BaiduMobAdSDK
+    - BDASignalSDK
+    - BUTTSDKFramework
+    - FMDB
+    - GDTMobSDK
+    - GMBaiduAdapter-Beta
+    - GMGdtAdapter-Beta
+    - GMKsAdapter-Beta
+    - GMSigmobAdapter-Beta
+    - HJDanmaku
+    - IQKeyboardManager
+    - KSAdSDK
+    - lottie-ios_Oc
+    - Masonry
+    - MJExtension
+    - MMKV
+    - MMKVCore
+    - Protobuf
+    - SDWebImage
+    - SigmobAd-iOS
+    - STPopup
+    - SVProgressHUD
+    - UICountingLabel
+    - UMCommon
+    - UMDevice
+    - WechatOpenSDK-XCFramework
+    - YYText
+
+SPEC CHECKSUMS:
+  Ads-CN-Beta: adecae709f41cc82ecb976597a29ee610bdf82ad
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  BaiduMobAdSDK: 521d9b7b3ee909eab41966972b9aefa0c95fa44c
+  BDASignalSDK: 8bb707e922e9fef1718e66ba3c36d9975d665e09
+  BUTTSDKFramework: b5d45b40003335843f05088c2373cef0b5638a9e
+  FMDB: 728731dd336af3936ce00f91d9d8495f5718a0e6
+  GDTMobSDK: 8cd8edbf854115062da986ce7bc4b57948f69e2b
+  GMBaiduAdapter-Beta: c7816fe4d9bd6d41bb0f2540b2db35d537ba77d2
+  GMGdtAdapter-Beta: 928b42d73be43ae94fbfc5f98a7dfd6f2aa04938
+  GMKsAdapter-Beta: e2c250a3541853b0c9623c5ead6e61ac364397c1
+  GMSigmobAdapter-Beta: 2b0c820a0f814aa076896979451f23d256e940f7
+  HJDanmaku: b3891e906e0dd1cefa39ccf43253a1ca1efb9241
+  IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
+  KSAdSDK: 049c561def63908e62071dbed49eb18822e5aabe
+  lottie-ios_Oc: 246311aa2a6106fe03cb34e3e30f8daf7e1e7d9a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: e97d164cb411aa9795cf576093a1fa208b4a8dd8
+  MMKV: 1a8e7dbce7f9cad02c52e1b1091d07bd843aefaf
+  MMKVCore: f2dd4c9befea04277a55e84e7812f930537993df
+  Protobuf: c499fb5777342ab1a918d7d25f591bb0820a6e52
+  SDWebImage: 16309af6d214ba3f77a7c6f6fdda888cb313a50a
+  SigmobAd-iOS: 80dee712ef95cd73907ce88558a9724bfb9ca04f
+  STPopup: a9045557bc48a0df51fbb7bf0544447c5fe84d34
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
+  UMCommon: db7379bf52a5d6fcd798384539704998224b8be0
+  UMDevice: dcdf7ec167387837559d149fbc7d793d984faf82
+  WechatOpenSDK-XCFramework: ff342ae616bb86df3d236aca38059dfd4bc4a949
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 443f328a1cf7bac66991cd5eee2dfb3518c32fa0
+
+COCOAPODS: 1.16.2

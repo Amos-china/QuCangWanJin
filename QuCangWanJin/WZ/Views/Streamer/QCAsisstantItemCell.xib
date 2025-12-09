@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QCAsisstantItemCell" id="gTV-IL-0wX" customClass="QCAsisstantItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="184" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="184" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_def_bg_im" translatesAutoresizingMaskIntoConstraints="NO" id="hEp-6f-urY">
+                        <rect key="frame" x="3" y="3" width="178" height="254"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fixCorner">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUa-Da-Xc3">
+                        <rect key="frame" x="62.333333333333343" y="220.33333333333334" width="59.666666666666657" height="23.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="选我吧" backgroundImage="zb_item_xwb"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="selectButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="jLf-cT-2vP"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-8W-2fq">
+                        <rect key="frame" x="0.0" y="0.0" width="34.666666666666664" height="17.666666666666668"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="可可" backgroundImage="zb_item_name_bg"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zud-Jc-FbY">
+                        <rect key="frame" x="0.0" y="0.0" width="184" height="260"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zb_item_suo" translatesAutoresizingMaskIntoConstraints="NO" id="Lia-Ep-Dct">
+                                <rect key="frame" x="76.333333333333329" y="100.33333333333333" width="31.666666666666671" height="31.666666666666671"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还差4关解锁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4h-lB-3bu">
+                                <rect key="frame" x="51" y="146" width="82" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lia-Ep-Dct" firstAttribute="centerY" secondItem="Zud-Jc-FbY" secondAttribute="centerY" constant="-14" id="btp-y5-0ls"/>
+                            <constraint firstItem="Lia-Ep-Dct" firstAttribute="centerX" secondItem="Zud-Jc-FbY" secondAttribute="centerX" id="eip-wU-GbI"/>
+                            <constraint firstItem="J4h-lB-3bu" firstAttribute="centerX" secondItem="Zud-Jc-FbY" secondAttribute="centerX" id="k3G-x5-c3A"/>
+                            <constraint firstItem="J4h-lB-3bu" firstAttribute="top" secondItem="Lia-Ep-Dct" secondAttribute="bottom" constant="14" id="uHR-2w-jvn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fixCorner">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="hEp-6f-urY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="5S1-LB-iHl"/>
+                <constraint firstAttribute="bottom" secondItem="hEp-6f-urY" secondAttribute="bottom" constant="3" id="CAh-j6-gHo"/>
+                <constraint firstItem="MUa-Da-Xc3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="RqC-nF-zbv"/>
+                <constraint firstAttribute="trailing" secondItem="Zud-Jc-FbY" secondAttribute="trailing" id="UPl-wK-T1d"/>
+                <constraint firstItem="gOe-8W-2fq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dGj-ve-ywU"/>
+                <constraint firstAttribute="trailing" secondItem="hEp-6f-urY" secondAttribute="trailing" constant="3" id="fPb-ce-NDf"/>
+                <constraint firstAttribute="bottom" secondItem="MUa-Da-Xc3" secondAttribute="bottom" constant="16" id="fYO-7T-PB4"/>
+                <constraint firstItem="hEp-6f-urY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="ilb-dT-Kry"/>
+                <constraint firstItem="Zud-Jc-FbY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kGN-Mv-U8I"/>
+                <constraint firstItem="Zud-Jc-FbY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kaB-SQ-9Sg"/>
+                <constraint firstItem="gOe-8W-2fq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pBB-qE-Exf"/>
+                <constraint firstAttribute="bottom" secondItem="Zud-Jc-FbY" secondAttribute="bottom" id="yUI-Gn-87R"/>
+            </constraints>
+            <size key="customSize" width="184" height="260"/>
+            <connections>
+                <outlet property="nameBtn" destination="gOe-8W-2fq" id="Tmp-iy-Pw4"/>
+                <outlet property="numLB" destination="J4h-lB-3bu" id="TP6-gL-bfc"/>
+                <outlet property="selectBtn" destination="MUa-Da-Xc3" id="JpA-v5-gwT"/>
+                <outlet property="streamerIM" destination="hEp-6f-urY" id="bZC-HP-XGg"/>
+                <outlet property="unlockView" destination="Zud-Jc-FbY" id="4hf-VX-sdT"/>
+            </connections>
+            <point key="canvasLocation" x="-343.51145038167937" y="-99.295774647887328"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_def_bg_im" width="375" height="800.33331298828125"/>
+        <image name="zb_item_name_bg" width="34.666667938232422" height="17.666666030883789"/>
+        <image name="zb_item_suo" width="31.666666030883789" height="31.666666030883789"/>
+        <image name="zb_item_xwb" width="59.333332061767578" height="23.666666030883789"/>
+    </resources>
+</document>

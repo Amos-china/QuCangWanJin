@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QCGameMainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hb-bg" translatesAutoresizingMaskIntoConstraints="NO" id="PZ5-bB-A1d">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGJ-wk-8tR">
+                    <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="pRj-Jz-Adl"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-eD-5QH">
+                    <rect key="frame" x="0.0" y="162" width="393" height="690"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5W-8E-BXn">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="463.33333333333331"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ER-Lr-Gpk">
+                                    <rect key="frame" x="16" y="10" width="361" height="133.66666666666666"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="gsb_ktcgm_im"/>
+                                    <connections>
+                                        <action selector="oneButtonAction:" destination="-1" eventType="touchUpInside" id="X0y-gx-nEq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCW-da-DkU">
+                                    <rect key="frame" x="16" y="159.66666666666669" width="172.66666666666666" height="134"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="gsb_jscg_im"/>
+                                    <connections>
+                                        <action selector="twoButtonAction:" destination="-1" eventType="touchUpInside" id="fAW-9X-Fak"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8Y-U3-3D1">
+                                    <rect key="frame" x="204.66666666666663" y="159.66666666666669" width="172.33333333333337" height="134"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="gsb_tgcq_im"/>
+                                    <connections>
+                                        <action selector="threeButtonAction:" destination="-1" eventType="touchUpInside" id="yrD-Q0-BLN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNC-bn-AY2">
+                                    <rect key="frame" x="16" y="309.66666666666669" width="361" height="133.66666666666669"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="gsb_ncwc_im"/>
+                                    <connections>
+                                        <action selector="fourButtonAction:" destination="-1" eventType="touchUpInside" id="bd8-Fu-rzi"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="XCW-da-DkU" firstAttribute="leading" secondItem="z5W-8E-BXn" secondAttribute="leading" constant="16" id="2fa-37-WPS"/>
+                                <constraint firstItem="CNC-bn-AY2" firstAttribute="leading" secondItem="z5W-8E-BXn" secondAttribute="leading" constant="16" id="3tS-Cg-Uxj"/>
+                                <constraint firstItem="CNC-bn-AY2" firstAttribute="centerX" secondItem="z5W-8E-BXn" secondAttribute="centerX" id="B3i-th-lqb"/>
+                                <constraint firstItem="CNC-bn-AY2" firstAttribute="top" secondItem="XCW-da-DkU" secondAttribute="bottom" constant="16" id="FET-wn-YdT"/>
+                                <constraint firstItem="g8Y-U3-3D1" firstAttribute="leading" secondItem="XCW-da-DkU" secondAttribute="trailing" constant="16" id="FUG-w1-B1H"/>
+                                <constraint firstAttribute="trailing" secondItem="g8Y-U3-3D1" secondAttribute="trailing" constant="16" id="FnM-dU-vND"/>
+                                <constraint firstItem="8ER-Lr-Gpk" firstAttribute="top" secondItem="z5W-8E-BXn" secondAttribute="top" constant="10" id="K8G-Qo-2Jz"/>
+                                <constraint firstAttribute="trailing" secondItem="CNC-bn-AY2" secondAttribute="trailing" constant="16" id="L2b-MD-4q2"/>
+                                <constraint firstItem="8ER-Lr-Gpk" firstAttribute="leading" secondItem="z5W-8E-BXn" secondAttribute="leading" constant="16" id="VNu-4o-dSs"/>
+                                <constraint firstItem="g8Y-U3-3D1" firstAttribute="width" secondItem="XCW-da-DkU" secondAttribute="width" id="aQu-bu-VxW"/>
+                                <constraint firstItem="g8Y-U3-3D1" firstAttribute="top" secondItem="8ER-Lr-Gpk" secondAttribute="bottom" constant="16" id="bYt-iO-A6o"/>
+                                <constraint firstItem="8ER-Lr-Gpk" firstAttribute="centerX" secondItem="z5W-8E-BXn" secondAttribute="centerX" id="jER-ZR-gFV"/>
+                                <constraint firstAttribute="bottom" secondItem="CNC-bn-AY2" secondAttribute="bottom" constant="20" id="m0S-qr-rA9"/>
+                                <constraint firstItem="XCW-da-DkU" firstAttribute="top" secondItem="8ER-Lr-Gpk" secondAttribute="bottom" constant="16" id="nkB-q2-v6C"/>
+                                <constraint firstAttribute="trailing" secondItem="8ER-Lr-Gpk" secondAttribute="trailing" constant="16" id="oqZ-d9-g8b"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="z5W-8E-BXn" secondAttribute="trailing" id="69m-TN-E8q"/>
+                        <constraint firstAttribute="bottom" secondItem="z5W-8E-BXn" secondAttribute="bottom" id="SYO-Wf-TQ6"/>
+                        <constraint firstItem="z5W-8E-BXn" firstAttribute="top" secondItem="2FQ-eD-5QH" secondAttribute="top" id="WX5-In-XuX"/>
+                        <constraint firstItem="z5W-8E-BXn" firstAttribute="leading" secondItem="2FQ-eD-5QH" secondAttribute="leading" id="Yuq-Ug-WV3"/>
+                        <constraint firstItem="z5W-8E-BXn" firstAttribute="centerX" secondItem="2FQ-eD-5QH" secondAttribute="centerX" id="otG-aI-R51"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2FQ-eD-5QH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="2NY-fd-W3E"/>
+                <constraint firstItem="rGJ-wk-8tR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="7lx-OQ-gTI"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PZ5-bB-A1d" secondAttribute="trailing" id="DxZ-EH-ydF"/>
+                <constraint firstItem="2FQ-eD-5QH" firstAttribute="top" secondItem="rGJ-wk-8tR" secondAttribute="bottom" id="E79-4z-TCz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rGJ-wk-8tR" secondAttribute="trailing" id="PYB-i3-f1j"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="2FQ-eD-5QH" secondAttribute="trailing" id="Tqf-cd-Ku9"/>
+                <constraint firstItem="rGJ-wk-8tR" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Z57-uf-LBm"/>
+                <constraint firstAttribute="bottom" secondItem="PZ5-bB-A1d" secondAttribute="bottom" id="lSo-kX-sql"/>
+                <constraint firstItem="PZ5-bB-A1d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qfW-1A-fvx"/>
+                <constraint firstAttribute="bottom" secondItem="2FQ-eD-5QH" secondAttribute="bottom" id="s1M-6s-d8g"/>
+                <constraint firstItem="PZ5-bB-A1d" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="yxi-KG-0HT"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gsb_jscg_im" width="163.66667175292969" height="133.66667175292969"/>
+        <image name="gsb_ktcgm_im" width="343" height="133.66667175292969"/>
+        <image name="gsb_ncwc_im" width="343" height="133.66667175292969"/>
+        <image name="gsb_tgcq_im" width="163.66667175292969" height="133.66667175292969"/>
+        <image name="hb-bg" width="375.33334350585938" height="812.33331298828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

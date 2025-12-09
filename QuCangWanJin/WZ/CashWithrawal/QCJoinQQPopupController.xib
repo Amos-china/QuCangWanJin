@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QCJoinQQPopupController">
+            <connections>
+                <outlet property="titleLabel" destination="yle-Qi-KhX" id="51f-AJ-Y1h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OwP-m9-DAY">
+                    <rect key="frame" x="41.333333333333343" y="287.33333333333326" width="310.66666666666663" height="277.66666666666674"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="toast_ts_bg" translatesAutoresizingMaskIntoConstraints="NO" id="tAS-hk-bKw">
+                            <rect key="frame" x="0.0" y="0.0" width="310.66666666666669" height="277.66666666666669"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOQ-cW-PeY">
+                            <rect key="frame" x="271.66666666666669" y="20" width="19" height="22"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="bcsmzxx_close"/>
+                            <connections>
+                                <action selector="clooseButtonAction:" destination="-1" eventType="touchUpInside" id="NW0-rQ-5Xf"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zM-o9-saG">
+                            <rect key="frame" x="14" y="64" width="282.66666666666669" height="110.66666666666669"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cash_join_qq_tips_im" translatesAutoresizingMaskIntoConstraints="NO" id="myc-rl-iea">
+                                    <rect key="frame" x="13.999999999999993" y="35.333333333333371" width="8" height="8"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="确保用户真实性，提现前先加群 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EZ-st-uqT">
+                                    <rect key="frame" x="31.999999999999986" y="29.666666666666686" width="236.66666666666663" height="19.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.25072029229999998" green="0.25072029229999998" blue="0.25072029229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cash_join_qq_tips_im" translatesAutoresizingMaskIntoConstraints="NO" id="40c-1b-x52">
+                                    <rect key="frame" x="13.999999999999993" y="67.333333333333371" width="8" height="8"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="加群后，再返回游戏进行提现" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnv-II-8tY">
+                                    <rect key="frame" x="31.999999999999986" y="61.666666666666693" width="236.66666666666663" height="19.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.25072029229999998" green="0.25072029229999998" blue="0.25072029229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95794886349999997" green="0.92831033470000002" blue="0.89194864029999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="40c-1b-x52" firstAttribute="centerY" secondItem="8zM-o9-saG" secondAttribute="centerY" constant="16" id="KDD-DD-dQM"/>
+                                <constraint firstItem="3EZ-st-uqT" firstAttribute="leading" secondItem="myc-rl-iea" secondAttribute="trailing" constant="10" id="Soh-Hf-O27"/>
+                                <constraint firstItem="40c-1b-x52" firstAttribute="leading" secondItem="8zM-o9-saG" secondAttribute="leading" constant="14" id="Svl-Dm-Gtn"/>
+                                <constraint firstAttribute="trailing" secondItem="Xnv-II-8tY" secondAttribute="trailing" constant="14" id="UKc-Qt-fSY"/>
+                                <constraint firstItem="Xnv-II-8tY" firstAttribute="centerY" secondItem="40c-1b-x52" secondAttribute="centerY" id="VXQ-5T-kad"/>
+                                <constraint firstItem="Xnv-II-8tY" firstAttribute="leading" secondItem="40c-1b-x52" secondAttribute="trailing" constant="10" id="gXR-hV-Dp1"/>
+                                <constraint firstItem="myc-rl-iea" firstAttribute="leading" secondItem="8zM-o9-saG" secondAttribute="leading" constant="14" id="iNm-Ko-LKa"/>
+                                <constraint firstItem="3EZ-st-uqT" firstAttribute="centerY" secondItem="myc-rl-iea" secondAttribute="centerY" id="nUX-qt-hFN"/>
+                                <constraint firstItem="myc-rl-iea" firstAttribute="centerY" secondItem="8zM-o9-saG" secondAttribute="centerY" constant="-16" id="tcm-mS-gOe"/>
+                                <constraint firstAttribute="trailing" secondItem="3EZ-st-uqT" secondAttribute="trailing" constant="14" id="uRj-b9-t91"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixCorner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="fixBorderColor">
+                                    <color key="value" red="0.95053285359999995" green="0.81990581750000002" blue="0.65139830109999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixBorderWidth">
+                                    <real key="value" value="0.59999999999999998"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq4-xS-ztR">
+                            <rect key="frame" x="47.333333333333343" y="198.66666666666669" width="216.00000000000003" height="55"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="一键加入QQ群" image="cash_qq_im" backgroundImage="popup_common_btn"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="joinQQButtonAction:" destination="-1" eventType="touchUpInside" id="YOF-Hp-BGP"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入官方游戏群" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yle-Qi-KhX">
+                            <rect key="frame" x="96.333333333333314" y="20" width="118" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                    <real key="value" value="21"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Aq4-xS-ztR" firstAttribute="top" secondItem="8zM-o9-saG" secondAttribute="bottom" constant="24" id="5Up-2j-x9E"/>
+                        <constraint firstItem="tAS-hk-bKw" firstAttribute="top" secondItem="OwP-m9-DAY" secondAttribute="top" id="8qq-yL-QDz"/>
+                        <constraint firstItem="yle-Qi-KhX" firstAttribute="centerX" secondItem="OwP-m9-DAY" secondAttribute="centerX" id="BQy-Le-Y6r"/>
+                        <constraint firstItem="yle-Qi-KhX" firstAttribute="top" secondItem="OwP-m9-DAY" secondAttribute="top" constant="20" id="Bc2-fk-LML"/>
+                        <constraint firstItem="8zM-o9-saG" firstAttribute="top" secondItem="VOQ-cW-PeY" secondAttribute="bottom" constant="22" id="HeG-Oj-xpf"/>
+                        <constraint firstAttribute="trailing" secondItem="tAS-hk-bKw" secondAttribute="trailing" id="QmB-T3-adz"/>
+                        <constraint firstItem="VOQ-cW-PeY" firstAttribute="top" secondItem="OwP-m9-DAY" secondAttribute="top" constant="20" id="SQu-4B-I7Z"/>
+                        <constraint firstAttribute="bottom" secondItem="tAS-hk-bKw" secondAttribute="bottom" id="aas-ga-7Il"/>
+                        <constraint firstAttribute="trailing" secondItem="VOQ-cW-PeY" secondAttribute="trailing" constant="20" id="auc-pn-4j7"/>
+                        <constraint firstAttribute="bottom" secondItem="Aq4-xS-ztR" secondAttribute="bottom" constant="24" id="eum-f5-6h8"/>
+                        <constraint firstItem="tAS-hk-bKw" firstAttribute="leading" secondItem="OwP-m9-DAY" secondAttribute="leading" id="fny-Iq-CA9"/>
+                        <constraint firstItem="8zM-o9-saG" firstAttribute="leading" secondItem="OwP-m9-DAY" secondAttribute="leading" constant="14" id="oiF-th-VVO"/>
+                        <constraint firstItem="Aq4-xS-ztR" firstAttribute="centerX" secondItem="OwP-m9-DAY" secondAttribute="centerX" id="tIb-up-Tgo"/>
+                        <constraint firstAttribute="trailing" secondItem="8zM-o9-saG" secondAttribute="trailing" constant="14" id="zbS-SV-j8U"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <constraints>
+                <constraint firstItem="OwP-m9-DAY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LG9-yU-JxU"/>
+                <constraint firstItem="OwP-m9-DAY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="udu-7e-RRe"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bcsmzxx_close" width="18.666666030883789" height="18.666666030883789"/>
+        <image name="cash_join_qq_tips_im" width="7.6666665077209473" height="7.6666665077209473"/>
+        <image name="cash_qq_im" width="21.666666030883789" height="25"/>
+        <image name="popup_common_btn" width="215.66667175292969" height="54.333332061767578"/>
+        <image name="toast_ts_bg" width="310.66665649414062" height="277.66665649414062"/>
+    </resources>
+</document>

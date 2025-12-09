@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QCCashWechatSuccessController">
+            <connections>
+                <outlet property="getButton" destination="87C-xV-otW" id="2AE-Gn-5kA"/>
+                <outlet property="moneyLabel" destination="8FW-Af-cmn" id="mbU-Xf-AtM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quw-xk-tKn">
+                    <rect key="frame" x="41.333333333333343" y="242.99999999999997" width="310.66666666666663" height="366.33333333333326"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_common_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fhh-rj-Fjl">
+                            <rect key="frame" x="0.0" y="0.0" width="310.66666666666669" height="366.33333333333331"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uax-M2-UZ7">
+                            <rect key="frame" x="20" y="101.66666666666667" width="270.66666666666669" height="139.66666666666663"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FW-Af-cmn">
+                                    <rect key="frame" x="90.666666666666657" y="85.666666666666629" width="89" height="46"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                    <color key="textColor" red="0.90938419100000001" green="0.29808521269999999" blue="0.2360952795" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                            <real key="value" value="38"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toas_success_hb_im" translatesAutoresizingMaskIntoConstraints="NO" id="Jcc-aT-k6t">
+                                    <rect key="frame" x="107.00000000000001" y="15" width="56.666666666666671" height="66.666666666666671"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95794886349999997" green="0.92831033470000002" blue="0.89194864029999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="8FW-Af-cmn" firstAttribute="top" secondItem="Jcc-aT-k6t" secondAttribute="bottom" constant="4" id="7eV-iH-ttm"/>
+                                <constraint firstItem="Jcc-aT-k6t" firstAttribute="centerX" secondItem="Uax-M2-UZ7" secondAttribute="centerX" id="HXA-yQ-2lC"/>
+                                <constraint firstAttribute="bottom" secondItem="8FW-Af-cmn" secondAttribute="bottom" constant="8" id="URV-R5-SRN"/>
+                                <constraint firstItem="8FW-Af-cmn" firstAttribute="centerX" secondItem="Uax-M2-UZ7" secondAttribute="centerX" id="VIq-0h-cB3"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixCorner">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="fixBorderColor">
+                                    <color key="value" red="0.95053285359999995" green="0.81990581750000002" blue="0.65139830109999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixBorderWidth">
+                                    <real key="value" value="0.59999999999999998"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87C-xV-otW">
+                            <rect key="frame" x="47.333333333333343" y="281.33333333333337" width="216.00000000000003" height="55"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="开心收下" backgroundImage="popup_common_btn">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="getButtonAction:" destination="-1" eventType="touchUpInside" id="436-AW-jJi"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toast_success_gxhd_title" translatesAutoresizingMaskIntoConstraints="NO" id="CyN-NI-uEP">
+                            <rect key="frame" x="98" y="10.000000000000002" width="114.33333333333331" height="31.666666666666671"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Uax-M2-UZ7" secondAttribute="trailing" constant="20" id="0yM-ej-3kx"/>
+                        <constraint firstItem="CyN-NI-uEP" firstAttribute="centerX" secondItem="quw-xk-tKn" secondAttribute="centerX" id="4At-Eh-P1j"/>
+                        <constraint firstItem="Uax-M2-UZ7" firstAttribute="top" secondItem="CyN-NI-uEP" secondAttribute="bottom" constant="60" id="97I-sK-KLR"/>
+                        <constraint firstAttribute="bottom" secondItem="fhh-rj-Fjl" secondAttribute="bottom" id="9kv-4R-iZi"/>
+                        <constraint firstItem="fhh-rj-Fjl" firstAttribute="top" secondItem="quw-xk-tKn" secondAttribute="top" id="Ax2-ua-alC"/>
+                        <constraint firstItem="87C-xV-otW" firstAttribute="top" secondItem="Uax-M2-UZ7" secondAttribute="bottom" constant="40" id="BgK-Ka-fLc"/>
+                        <constraint firstAttribute="bottom" secondItem="87C-xV-otW" secondAttribute="bottom" constant="30" id="c8M-DM-61X"/>
+                        <constraint firstItem="87C-xV-otW" firstAttribute="centerX" secondItem="quw-xk-tKn" secondAttribute="centerX" id="g7W-9H-faO"/>
+                        <constraint firstItem="fhh-rj-Fjl" firstAttribute="leading" secondItem="quw-xk-tKn" secondAttribute="leading" id="hSL-ag-2b2"/>
+                        <constraint firstAttribute="trailing" secondItem="fhh-rj-Fjl" secondAttribute="trailing" id="mGb-Wk-m39"/>
+                        <constraint firstItem="CyN-NI-uEP" firstAttribute="top" secondItem="quw-xk-tKn" secondAttribute="top" constant="10" id="rwz-zb-kt2"/>
+                        <constraint firstItem="Uax-M2-UZ7" firstAttribute="leading" secondItem="quw-xk-tKn" secondAttribute="leading" constant="20" id="vCy-KP-tBT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <constraints>
+                <constraint firstItem="quw-xk-tKn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BPD-pF-Mdg"/>
+                <constraint firstItem="quw-xk-tKn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="CkW-Sg-18e"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popup_common_bg" width="310.66665649414062" height="366.33334350585938"/>
+        <image name="popup_common_btn" width="215.66667175292969" height="54.333332061767578"/>
+        <image name="toas_success_hb_im" width="56.666667938232422" height="66.666664123535156"/>
+        <image name="toast_success_gxhd_title" width="114.33333587646484" height="31.666666030883789"/>
+    </resources>
+</document>

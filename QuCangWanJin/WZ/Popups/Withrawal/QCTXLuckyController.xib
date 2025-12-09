@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QCTXLuckyController">
+            <connections>
+                <outlet property="contentLabel" destination="ezT-zP-tbY" id="nTs-hW-dYF"/>
+                <outlet property="heppyButton" destination="3Eq-9X-EYc" id="5Ra-pE-nfP"/>
+                <outlet property="moneyLabel" destination="sBG-bQ-TQe" id="Vfw-4r-hDt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jyb_top_im" translatesAutoresizingMaskIntoConstraints="NO" id="fpp-JV-0i2">
+                    <rect key="frame" x="109.33333333333333" y="128.66666666666663" width="174.33333333333337" height="174.33333333333337"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcd-eL-2qs">
+                    <rect key="frame" x="41.333333333333343" y="242.99999999999997" width="310.66666666666663" height="366.33333333333326"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_common_bg" translatesAutoresizingMaskIntoConstraints="NO" id="vS8-np-vVY">
+                            <rect key="frame" x="0.0" y="0.0" width="310.66666666666669" height="366.33333333333331"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jyb_title_im" translatesAutoresizingMaskIntoConstraints="NO" id="fbL-5J-IHY">
+                            <rect key="frame" x="85.333333333333357" y="10.000000000000002" width="139.66666666666663" height="31.666666666666671"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即将达标提现!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E4-Km-kOK">
+                            <rect key="frame" x="92" y="76.666666666666686" width="126.33333333333331" height="25.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                    <real key="value" value="21"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="元加油包助力光速到账，这波福利赶" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezT-zP-tbY">
+                            <rect key="frame" x="32.999999999999986" y="104" width="244.66666666666663" height="38.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.39957857130000002" green="0.39957857130000002" blue="0.39957857130000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Eq-9X-EYc">
+                            <rect key="frame" x="47.333333333333329" y="284" width="215.66666666666669" height="54.333333333333314"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="开心收下" backgroundImage="popup_common_btn">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="32D-7a-App"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jyb_money_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Rf3-vH-7N7">
+                            <rect key="frame" x="24.333333333333343" y="162.33333333333331" width="261.66666666666663" height="91.666666666666686"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCQ-F7-oqX">
+                            <rect key="frame" x="86.666666666666643" y="187.33333333333331" width="137.33333333333337" height="41.666666666666657"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jyb-wx3" translatesAutoresizingMaskIntoConstraints="NO" id="t1q-L0-jeG">
+                                    <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="41.666666666666664"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBG-bQ-TQe" customClass="UICountingLabel">
+                                    <rect key="frame" x="51.666666666666664" y="1.6666666666666856" width="75.666666666666686" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                    <color key="textColor" red="0.86568331720000002" green="0.32569146160000001" blue="0.29907512660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                            <real key="value" value="32"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="t1q-L0-jeG" firstAttribute="top" secondItem="iCQ-F7-oqX" secondAttribute="top" id="0jc-ZA-bHm"/>
+                                <constraint firstItem="t1q-L0-jeG" firstAttribute="leading" secondItem="iCQ-F7-oqX" secondAttribute="leading" id="4vM-Gn-5mW"/>
+                                <constraint firstAttribute="trailing" secondItem="sBG-bQ-TQe" secondAttribute="trailing" constant="10" id="Di6-Nf-i0d"/>
+                                <constraint firstItem="sBG-bQ-TQe" firstAttribute="centerY" secondItem="iCQ-F7-oqX" secondAttribute="centerY" id="IRm-zE-rec"/>
+                                <constraint firstAttribute="bottom" secondItem="t1q-L0-jeG" secondAttribute="bottom" id="VfG-Ss-oFR"/>
+                                <constraint firstItem="sBG-bQ-TQe" firstAttribute="leading" secondItem="t1q-L0-jeG" secondAttribute="trailing" constant="10" id="zeI-Db-AwU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="fbL-5J-IHY" firstAttribute="centerX" secondItem="Qcd-eL-2qs" secondAttribute="centerX" id="2fS-cu-833"/>
+                        <constraint firstItem="vS8-np-vVY" firstAttribute="top" secondItem="Qcd-eL-2qs" secondAttribute="top" id="455-Pu-Hqf"/>
+                        <constraint firstItem="3Eq-9X-EYc" firstAttribute="top" secondItem="Rf3-vH-7N7" secondAttribute="bottom" constant="30" id="8rK-NY-qi4"/>
+                        <constraint firstAttribute="trailing" secondItem="vS8-np-vVY" secondAttribute="trailing" id="Bcj-Kl-jcK"/>
+                        <constraint firstItem="5E4-Km-kOK" firstAttribute="centerX" secondItem="Qcd-eL-2qs" secondAttribute="centerX" id="ROR-WN-eey"/>
+                        <constraint firstItem="Rf3-vH-7N7" firstAttribute="centerX" secondItem="Qcd-eL-2qs" secondAttribute="centerX" id="WZ9-mM-I6R"/>
+                        <constraint firstItem="ezT-zP-tbY" firstAttribute="leading" secondItem="Qcd-eL-2qs" secondAttribute="leading" constant="33" id="XtD-zz-Tia"/>
+                        <constraint firstItem="iCQ-F7-oqX" firstAttribute="centerX" secondItem="Rf3-vH-7N7" secondAttribute="centerX" id="iA8-QW-a6t"/>
+                        <constraint firstAttribute="trailing" secondItem="ezT-zP-tbY" secondAttribute="trailing" constant="33" id="jL6-V1-FMo"/>
+                        <constraint firstAttribute="bottom" secondItem="3Eq-9X-EYc" secondAttribute="bottom" constant="28" id="jhh-ya-PdS"/>
+                        <constraint firstItem="iCQ-F7-oqX" firstAttribute="centerY" secondItem="Rf3-vH-7N7" secondAttribute="centerY" id="jxN-Ma-Cvz"/>
+                        <constraint firstItem="Rf3-vH-7N7" firstAttribute="top" secondItem="ezT-zP-tbY" secondAttribute="bottom" constant="20" id="kHS-UG-fF7"/>
+                        <constraint firstAttribute="bottom" secondItem="vS8-np-vVY" secondAttribute="bottom" id="kUw-de-QRc"/>
+                        <constraint firstItem="vS8-np-vVY" firstAttribute="leading" secondItem="Qcd-eL-2qs" secondAttribute="leading" id="pyc-3S-dre"/>
+                        <constraint firstItem="ezT-zP-tbY" firstAttribute="top" secondItem="5E4-Km-kOK" secondAttribute="bottom" constant="2" id="rw7-g9-js4"/>
+                        <constraint firstItem="fbL-5J-IHY" firstAttribute="top" secondItem="Qcd-eL-2qs" secondAttribute="top" constant="10" id="uQZ-Hl-f4g"/>
+                        <constraint firstItem="3Eq-9X-EYc" firstAttribute="centerX" secondItem="Qcd-eL-2qs" secondAttribute="centerX" id="xgv-xj-wm1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fpp-JV-0i2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F27-I0-lmU"/>
+                <constraint firstItem="Qcd-eL-2qs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fMG-gC-JRq"/>
+                <constraint firstItem="Qcd-eL-2qs" firstAttribute="top" secondItem="fpp-JV-0i2" secondAttribute="bottom" constant="-60" id="xMF-am-yoK"/>
+                <constraint firstItem="Qcd-eL-2qs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z3V-fk-Egg"/>
+            </constraints>
+            <point key="canvasLocation" x="300" y="0.0"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jyb-wx3" width="41.666667938232422" height="41.666667938232422"/>
+        <image name="jyb_money_bg" width="261.66665649414062" height="91.666664123535156"/>
+        <image name="jyb_title_im" width="139.66667175292969" height="31.666666030883789"/>
+        <image name="jyb_top_im" width="174.33332824707031" height="174.33332824707031"/>
+        <image name="popup_common_bg" width="310.66665649414062" height="366.33334350585938"/>
+        <image name="popup_common_btn" width="215.66667175292969" height="54.333332061767578"/>
+    </resources>
+</document>

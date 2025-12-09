@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QCAsisstionViewController">
+            <connections>
+                <outlet property="collectionView" destination="eIZ-bv-l8H" id="Mqj-R6-PD5"/>
+                <outlet property="flowLayout" destination="A8N-WK-gpY" id="omS-S1-rhm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zb-bg" translatesAutoresizingMaskIntoConstraints="NO" id="l8J-oj-05W">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKH-pj-9cR">
+                    <rect key="frame" x="9.9999999999999982" y="118.00000000000001" width="29.333333333333329" height="29.666666666666671"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="zb_fnhui"/>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="HOs-9W-MJL"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eIZ-bv-l8H">
+                    <rect key="frame" x="0.0" y="255" width="393" height="597"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eIZ-bv-l8H" secondAttribute="height" multiplier="131:199" id="gpt-3b-voS"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A8N-WK-gpY">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DzM-uk-LCq"/>
+                        <outlet property="delegate" destination="-1" id="lMk-Ju-cla"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="l8J-oj-05W" secondAttribute="bottom" id="9jv-HQ-aDN"/>
+                <constraint firstItem="l8J-oj-05W" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="BBW-FC-F8w"/>
+                <constraint firstItem="eIZ-bv-l8H" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Hxq-J7-y6w"/>
+                <constraint firstItem="l8J-oj-05W" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="LB5-2R-BVV"/>
+                <constraint firstItem="eIZ-bv-l8H" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="QtA-zp-W3a"/>
+                <constraint firstItem="AKH-pj-9cR" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Rhs-Vz-UNb"/>
+                <constraint firstItem="AKH-pj-9cR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="bEo-jc-XkC"/>
+                <constraint firstAttribute="bottom" secondItem="eIZ-bv-l8H" secondAttribute="bottom" id="iJm-rU-TG5"/>
+                <constraint firstItem="l8J-oj-05W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sG4-Um-u1B"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zb-bg" width="375.33334350585938" height="812"/>
+        <image name="zb_fnhui" width="29.333333969116211" height="29.666666030883789"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
