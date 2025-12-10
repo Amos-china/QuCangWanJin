@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QCSharePopupViewController">
+            <connections>
+                <outlet property="urlLabel" destination="y17-gV-raK" id="J2d-aN-o4y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gua-Kq-wnY">
+                    <rect key="frame" x="41.333333333333343" y="287.33333333333326" width="310.66666666666663" height="277.66666666666674"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fxhy_bg_im" translatesAutoresizingMaskIntoConstraints="NO" id="Wzp-zB-rHY">
+                            <rect key="frame" x="0.0" y="0.0" width="310.66666666666669" height="277.66666666666669"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47a-w5-qrF">
+                            <rect key="frame" x="275.66666666666669" y="16" width="19" height="22"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="commom-toast-close"/>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="jCO-Vv-BGf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐给好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iw5-gX-fIm">
+                            <rect key="frame" x="105" y="20" width="100.33333333333331" height="26.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                    <real key="value" value="21"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fxhy_url_bg_im" translatesAutoresizingMaskIntoConstraints="NO" id="4Aj-VD-uN2">
+                            <rect key="frame" x="24.333333333333343" y="66.333333333333371" width="261.66666666666663" height="83"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y17-gV-raK">
+                            <rect key="frame" x="34.333333333333329" y="76.333333333333371" width="241.66666666666669" height="63"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.39957857130000002" green="0.39957857130000002" blue="0.39957857130000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hin-Br-dKU">
+                            <rect key="frame" x="47.333333333333329" y="193.33333333333337" width="215.66666666666669" height="54.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="一键复制链接" backgroundImage="popup_common_btn">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fixFont">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="copyButtonAction:" destination="-1" eventType="touchUpInside" id="bM9-NU-Tj9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="好友点此链接，复制到手机自带浏览器下载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8c-s4-vB4">
+                            <rect key="frame" x="24.333333333333343" y="159.33333333333337" width="261.66666666666663" height="15.666666666666657"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.93144863840000003" green="0.45079219339999999" blue="0.18043088909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="47a-w5-qrF" secondAttribute="trailing" constant="16" id="0rA-1B-pcF"/>
+                        <constraint firstItem="4Aj-VD-uN2" firstAttribute="top" secondItem="Iw5-gX-fIm" secondAttribute="bottom" constant="20" id="2Ah-yO-6fb"/>
+                        <constraint firstItem="Hin-Br-dKU" firstAttribute="centerX" secondItem="Gua-Kq-wnY" secondAttribute="centerX" id="2VO-9K-I7G"/>
+                        <constraint firstItem="Wzp-zB-rHY" firstAttribute="leading" secondItem="Gua-Kq-wnY" secondAttribute="leading" id="3et-5o-Yht"/>
+                        <constraint firstItem="y17-gV-raK" firstAttribute="leading" secondItem="4Aj-VD-uN2" secondAttribute="leading" constant="10" id="4gI-ww-4Ok"/>
+                        <constraint firstAttribute="trailing" secondItem="Wzp-zB-rHY" secondAttribute="trailing" id="B1n-UJ-koi"/>
+                        <constraint firstItem="47a-w5-qrF" firstAttribute="top" secondItem="Gua-Kq-wnY" secondAttribute="top" constant="16" id="EUU-Tc-7gy"/>
+                        <constraint firstItem="Wzp-zB-rHY" firstAttribute="top" secondItem="Gua-Kq-wnY" secondAttribute="top" id="Gc1-y8-nzc"/>
+                        <constraint firstItem="y17-gV-raK" firstAttribute="top" secondItem="4Aj-VD-uN2" secondAttribute="top" constant="10" id="P4w-xD-g26"/>
+                        <constraint firstItem="Iw5-gX-fIm" firstAttribute="centerX" secondItem="Gua-Kq-wnY" secondAttribute="centerX" id="VxP-5b-uIk"/>
+                        <constraint firstItem="E8c-s4-vB4" firstAttribute="leading" secondItem="4Aj-VD-uN2" secondAttribute="leading" id="YGr-bx-W2v"/>
+                        <constraint firstItem="Iw5-gX-fIm" firstAttribute="top" secondItem="Gua-Kq-wnY" secondAttribute="top" constant="20" id="YcV-NT-aKf"/>
+                        <constraint firstItem="E8c-s4-vB4" firstAttribute="trailing" secondItem="4Aj-VD-uN2" secondAttribute="trailing" id="ec7-dm-ChG"/>
+                        <constraint firstAttribute="bottom" secondItem="Wzp-zB-rHY" secondAttribute="bottom" id="f77-g2-eE5"/>
+                        <constraint firstAttribute="bottom" secondItem="Hin-Br-dKU" secondAttribute="bottom" constant="30" id="iAp-yI-77C"/>
+                        <constraint firstItem="E8c-s4-vB4" firstAttribute="top" secondItem="4Aj-VD-uN2" secondAttribute="bottom" constant="10" id="l4M-LN-JZB"/>
+                        <constraint firstItem="4Aj-VD-uN2" firstAttribute="centerX" secondItem="Gua-Kq-wnY" secondAttribute="centerX" id="m1A-5g-TOc"/>
+                        <constraint firstItem="y17-gV-raK" firstAttribute="trailing" secondItem="4Aj-VD-uN2" secondAttribute="trailing" constant="-10" id="m7a-fC-4af"/>
+                        <constraint firstItem="y17-gV-raK" firstAttribute="bottom" secondItem="4Aj-VD-uN2" secondAttribute="bottom" constant="-10" id="mGP-ir-H5o"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Gua-Kq-wnY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="On3-2t-PQ1"/>
+                <constraint firstItem="Gua-Kq-wnY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qSi-lc-O0Y"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="commom-toast-close" width="18.666666030883789" height="18.666666030883789"/>
+        <image name="fxhy_bg_im" width="310.66665649414062" height="277.66665649414062"/>
+        <image name="fxhy_url_bg_im" width="261.66665649414062" height="83"/>
+        <image name="popup_common_btn" width="215.66667175292969" height="54.333332061767578"/>
+    </resources>
+</document>

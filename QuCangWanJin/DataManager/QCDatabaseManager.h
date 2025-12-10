@@ -1,10 +1,3 @@
-//
-//  AQDatabaseManager.h
-//  AnswerQuestions
-//
-//  Created by 陈志远 on 2025/11/26.
-//
-
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN

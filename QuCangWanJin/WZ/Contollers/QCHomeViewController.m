@@ -15,7 +15,8 @@
 #import "QCStartGuideViewController.h"
 #import "QCHBWithdrawalController.h"
 #import "QCMainTabbarViewController.h"
-
+#import "QCSharePopupViewController.h"
+#import "QCCashFeedBackController.h"
 @interface QCHomeViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *anchorImageView;
@@ -27,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *levelProgressView;
 @property (weak, nonatomic) IBOutlet QCAnswerButton *muiscOneButton;
 @property (weak, nonatomic) IBOutlet QCAnswerButton *musicTwoButton;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
 
 @property (nonatomic, strong) QCGameHomeMusicViewModel *indexViewModel;
 @property (weak, nonatomic) IBOutlet UIView *hbPopupView;
@@ -76,6 +78,11 @@
     [self setUi];
     
     [self loadData:0];
+    
+    NSInteger shareStatus = [QCUserModel getUserModel].recommend_config.status;
+    if (shareStatus) {
+        self.shareButton.hidden = NO;
+    }
     
     [[QCAdManager sharedInstance] loadRewardVideoAd];
     [[QCAdManager sharedInstance] loadNativeAd];
@@ -208,6 +215,16 @@
     
     [self.xjView updateView];
     [self.hbView updateView];
+}
+
+- (IBAction)shareAppButtonAction:(id)sender {
+    QCSharePopupViewController *vc = [[QCSharePopupViewController alloc] init];
+    [self presenClearColorPopupController:vc];
+}
+
+- (IBAction)freedBackButtonAction:(id)sender {
+    QCCashFeedBackController *vc = [[QCCashFeedBackController alloc] init];
+    [self pushViewController:vc];
 }
 
 - (IBAction)assistianButtonAction:(id)sender {

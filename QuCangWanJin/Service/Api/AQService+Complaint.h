@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)requestComplaintTypeId:(NSInteger)typeId
                        content:(NSString *)content
+                           pic:(NSString *)pic
                        success:(QCHTTPRequestResponseSuccessBlock)success
                          error:(QCHTTPRequestResponseErrorBlock)error;
 

@@ -1,10 +1,3 @@
-//
-//  NSDate+Add.h
-//  MelonTheater
-//
-//  Created by 陈志远 on 2024/1/5.
-//
-
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN

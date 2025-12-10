@@ -1,10 +1,3 @@
-//
-//  AQMessageDBManager.h
-//  AnswerQuestions
-//
-//  Created by 陈志远 on 2025/11/22.
-//
-
 #import <Foundation/Foundation.h>
 #import "QCGroupMessageModel.h"
 

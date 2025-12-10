@@ -45,3 +45,9 @@
 @implementation QCAutoHbConfig
 
 @end
+
+@implementation QCRecommendConfigModel
+
+
+
+@end

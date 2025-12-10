@@ -132,11 +132,11 @@ static NSString *const k_mmkv_show_show_qq_toast = @"k_mmkv_show_show_qq_toast";
 }
 
 - (void)requestComplaintContent:(NSString *)content success:(OnSuccess)success error:(QCHTTPRequestResponseErrorBlock)error {
-    [QCService requestComplaintTypeId:self.comlaintItemModel.complaintId
-                                     content:content
-                                     success:^(id  _Nonnull data) {
-        !success ? :success();
-    } error:error];
+//    [QCService requestComplaintTypeId:self.comlaintItemModel.complaintId
+//                                     content:content
+//                                     success:^(id  _Nonnull data) {
+//        !success ? :success();
+//    } error:error];
 }
 
 - (QCComplaintItemModel *)comlaintTableViewItem:(NSInteger)row {

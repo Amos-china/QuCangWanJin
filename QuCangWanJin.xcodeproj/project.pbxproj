@@ -240,7 +240,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = QuCangWanJin/QuCangWanJin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 5F38KGAR98;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -250,6 +250,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuCangWanJin/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "曲藏万金";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "我们需要访问你的相册功能以便你提交问题反馈图片";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "第三方广告内容推荐、展示及功能优化需要访问IDFAS数据，用于为用户推荐优质内容，IDFA数据不会与用户信息进行绑定。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -279,7 +280,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = QuCangWanJin/QuCangWanJin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 5F38KGAR98;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -289,6 +290,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuCangWanJin/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "曲藏万金";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "我们需要访问你的相册功能以便你提交问题反馈图片";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "第三方广告内容推荐、展示及功能优化需要访问IDFAS数据，用于为用户推荐优质内容，IDFA数据不会与用户信息进行绑定。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

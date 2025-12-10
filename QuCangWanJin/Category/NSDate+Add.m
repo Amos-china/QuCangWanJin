@@ -1,10 +1,3 @@
-//
-//  NSDate+Add.m
-//  MelonTheater
-//
-//  Created by 陈志远 on 2024/1/5.
-//
-
 #import "NSDate+Add.h"
 
 @implementation NSDate (Add)

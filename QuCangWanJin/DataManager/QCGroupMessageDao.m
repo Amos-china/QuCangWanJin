@@ -1,10 +1,3 @@
-//
-//  AQMessageDBManager.m
-//  AnswerQuestions
-//
-//  Created by 陈志远 on 2025/11/22.
-//
-
 #import "QCGroupMessageDao.h"
 #import "QCDatabaseManager.h"
 

@@ -3,6 +3,7 @@
 @class QCAccessibilityConfig;
 @class QCSafConfig;
 @class QCAutoHbConfig;
+@class QCRecommendConfigModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger dl_is_open;
 @property (nonatomic, copy) NSString *assistant_pic; //小助理图片
 @property (nonatomic, assign) NSInteger auto_fb_jg;
+@property (nonatomic, strong) QCRecommendConfigModel *recommend_config;
 
 + (void)saveUserModel:(QCUserModel *)userModel;
 + (QCUserModel *)getUserModel;
@@ -54,6 +56,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger is_open;
 @property (nonatomic, assign) NSInteger param1;
+
+@end
+
+@interface QCRecommendConfigModel : QCBaseModel
+
+@property (nonatomic, assign) NSInteger status;
+@property (nonatomic, copy) NSString *link;
 
 @end
 

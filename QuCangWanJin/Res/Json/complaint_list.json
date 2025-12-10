@@ -1,0 +1,90 @@
+{
+    "complaint_list": [
+        {
+            "complaintId": 1,
+            "name": "充值失败"
+        },
+        {
+            "complaintId": 2,
+            "name": "充值未到账"
+        },
+        {
+            "complaintId": 3,
+            "name": "购买道具未到账"
+        },
+        {
+            "complaintId": 4,
+            "name": "恶意扣费"
+        },
+        {
+            "complaintId": 5,
+            "name": "恶意封号"
+        },
+        {
+            "complaintId": 6,
+            "name": "登录失败"
+        },
+        {
+            "complaintId": 7,
+            "name": "欺诈赌博"
+        },
+        {
+            "complaintId": 8,
+            "name": "恶意营销"
+        },
+        {
+            "complaintId": 9,
+            "name": "色情"
+        },
+        {
+            "complaintId": 10,
+            "name": "诱导分享"
+        },
+        {
+            "complaintId": 11,
+            "name": "诱导关注"
+        },
+        {
+            "complaintId": 12,
+            "name": "诱导下载"
+        },
+        {
+            "complaintId": 13,
+            "name": "骚扰"
+        },
+        {
+            "complaintId": 14,
+            "name": "违法犯罪"
+        },
+        {
+            "complaintId": 15,
+            "name": "侵权(冒名、诽谤、抄袭)"
+        },
+        {
+            "complaintId": 16,
+            "name": "隐私信息收集"
+        },
+        {
+            "complaintId": 17,
+            "name": "其他"
+        }
+    ],
+    "feedback_list": [
+        {
+            "complaintId": 1,
+            "name": "提现"
+        },
+        {
+            "complaintId": 2,
+            "name": "账号申诉"
+        },
+        {
+            "complaintId": 3,
+            "name": "其他问题反馈"
+        },
+        {
+            "complaintId": 4,
+            "name": "其他功能建议"
+        }
+    ]
+}
