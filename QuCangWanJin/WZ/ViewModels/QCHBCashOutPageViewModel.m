@@ -64,12 +64,17 @@ static NSString *const k_mmkv_show_show_qq_toast = @"k_mmkv_show_show_qq_toast";
     float money = [self exchangeStringToFloatAt:self.cashOutPageModel.can_tx_gold_money];
     float minMoney = [self exchangeStringToFloatAt:self.cashOutPageModel.min_tx_money];
     if (money >= minMoney) {
-        if (self.cashOutPageModel.gold_tx_lj_switch) {
-            QCCommedHomeIndexModel *indexModel = [QCAdManager sharedInstance].commedHomeIndexModel;
-            if (indexModel.ad_download_config.has_do_num) {
-                return 0;
+        QCUserModel *userModel = [QCUserModel getUserModel];
+        if (userModel.area_is_show) {
+            if (self.cashOutPageModel.gold_tx_lj_switch) {
+                QCCommedHomeIndexModel *indexModel = [QCAdManager sharedInstance].commedHomeIndexModel;
+                if (indexModel.ad_download_config.has_do_num) {
+                    return 0;
+                }else {
+                    return 1;
+                }
             }else {
-                return 1;
+                return 0;
             }
         }else {
             return 0;
@@ -148,9 +153,12 @@ static NSString *const k_mmkv_show_show_qq_toast = @"k_mmkv_show_show_qq_toast";
 }
 
 - (BOOL)canCashShowJoinQQController {
-    if (self.cashOutPageModel.kf_config.kf_status) {
-        if (self.cashOutPageModel.kf_config.cash_out_stop) {
-            return [[MMKV defaultMMKV] getBoolForKey:k_mmkv_show_show_qq_toast defaultValue:YES];
+    QCUserModel *userModel = [QCUserModel getUserModel];
+    if (userModel.area_is_show) {
+        if (self.cashOutPageModel.kf_config.kf_status) {
+            if (self.cashOutPageModel.kf_config.cash_out_stop) {
+                return [[MMKV defaultMMKV] getBoolForKey:k_mmkv_show_show_qq_toast defaultValue:YES];
+            }
         }
     }
     return NO;
@@ -161,13 +169,16 @@ static NSString *const k_mmkv_show_show_qq_toast = @"k_mmkv_show_show_qq_toast";
 }
 
 - (BOOL)canShowTopJoinQQView {
-    if (self.cashOutPageModel.kf_config.kf_status) {
-        NSInteger cashOutNum = self.cashOutPageModel.kf_config.has_cash_out_num;
-        NSInteger condition = self.cashOutPageModel.kf_config.condition;
-        if (condition == 0) {
-            return YES;
-        }else {
-            return cashOutNum - condition >= 0;
+    QCUserModel *userModel = [QCUserModel getUserModel];
+    if (userModel.area_is_show) {
+        if (self.cashOutPageModel.kf_config.kf_status) {
+            NSInteger cashOutNum = self.cashOutPageModel.kf_config.has_cash_out_num;
+            NSInteger condition = self.cashOutPageModel.kf_config.condition;
+            if (condition == 0) {
+                return YES;
+            }else {
+                return cashOutNum - condition >= 0;
+            }
         }
     }
     return NO;

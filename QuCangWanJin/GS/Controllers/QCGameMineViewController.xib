@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QCGameMineViewController">
             <connections>
                 <outlet property="levelNumLabel" destination="GPA-zO-mL3" id="h1E-sZ-an9"/>
+                <outlet property="musicLevelLabel" destination="tjN-10-ZWo" id="J7Y-bG-XtJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

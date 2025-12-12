@@ -1,13 +1,9 @@
 #import "QCGameIndexViewModel.h"
-
-static NSString *const k_MMKV_GSB_GAME_INDEX_LEVEL_NUM_LEY = @"k_MMKV_GSB_GAME_INDEX_LEVEL_NUM_LEY";
-static NSString *const k_MMKV_GSB_GAME_INDEX_POINTS_KEY = @"k_MMKV_GSB_GAME_INDEX_POINTS_KEY";
-
+#import "QCGameUserDataModel.h"
 @interface QCGameIndexViewModel ()
 
 @property (nonatomic, copy) NSArray<QCGameMusicModel *> *musicDataArr;
-@property (nonatomic, assign) NSInteger levelNum;
-@property (nonatomic, assign) NSInteger points;
+@property (nonatomic, strong) QCGameUserDataModel *userDataModel;
 
 @end
 
@@ -17,12 +13,13 @@ static NSString *const k_MMKV_GSB_GAME_INDEX_POINTS_KEY = @"k_MMKV_GSB_GAME_INDE
     self = [super init];
     if (self) {
         self.selectIndex = -1;
-        self.levelNum = [[MMKV defaultMMKV] getInt32ForKey:k_MMKV_GSB_GAME_INDEX_LEVEL_NUM_LEY defaultValue:0];
-        self.points = [[MMKV defaultMMKV] getInt32ForKey:k_MMKV_GSB_GAME_INDEX_POINTS_KEY defaultValue:0];
+        self.userDataModel = [QCGameUserDataModel getUserData];
         [self loadMusicJsonFile];
     }
     return self;
 }
+
+
 
 - (void)loadMusicJsonFile {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"app_data" ofType:@"json"];
@@ -32,11 +29,11 @@ static NSString *const k_MMKV_GSB_GAME_INDEX_POINTS_KEY = @"k_MMKV_GSB_GAME_INDE
 }
 
 - (NSString *)controllerLevelTitle {
-    return SF(@"第%ld关",self.levelNum + 1);
+    return SF(@"第%ld关",self.userDataModel.musicLevelNum + 1);
 }
 
 - (QCGameMusicModel *)getCurrentLevelGameMusicModel {
-    return self.musicDataArr[self.levelNum];
+    return self.musicDataArr[self.userDataModel.musicLevelNum];
 }
 
 - (NSString *)buttonTitleAtIndex:(NSInteger)index {
@@ -49,7 +46,7 @@ static NSString *const k_MMKV_GSB_GAME_INDEX_POINTS_KEY = @"k_MMKV_GSB_GAME_INDE
 }
 
 - (NSString *)getCurrentPoints {
-    return SF(@"%ld",self.points);
+    return SF(@"%ld",self.userDataModel.points);
 }
 
 - (void)reset {
@@ -63,18 +60,11 @@ static NSString *const k_MMKV_GSB_GAME_INDEX_POINTS_KEY = @"k_MMKV_GSB_GAME_INDE
 
 - (void)nextLevel {
     [self reset];
-    self.levelNum ++;
-    [[MMKV defaultMMKV] setInt32:(int32_t)self.levelNum forKey:k_MMKV_GSB_GAME_INDEX_LEVEL_NUM_LEY];
+    [self.userDataModel changeMusicLevelNum];
 }
 
 - (void)changePointsWithRight:(BOOL)right {
-    if (right) {
-        self.points += 20;
-    }else {
-        self.points -= 10;
-        self.points = self.points < 0 ? 0 : self.points;
-    }
-    [[MMKV defaultMMKV] setInt32:(int32_t)self.points forKey:k_MMKV_GSB_GAME_INDEX_POINTS_KEY];
+    [self.userDataModel changePointsWithRight:right];
 }
 
 @end

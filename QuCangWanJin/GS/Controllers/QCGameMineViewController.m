@@ -10,27 +10,25 @@
 #import "QCAboutViewController.h"
 #import "QCFeedBackViewController.h"
 #import "QCGameIndexViewModel.h"
-
+#import "QCGameUserDataModel.h"
 @interface QCGameMineViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *levelNumLabel;
-@property (nonatomic, strong) QCGameIndexViewModel *viewModel;
+@property (weak, nonatomic) IBOutlet UILabel *musicLevelLabel;
 
 @end
 
 @implementation QCGameMineViewController
 
-- (QCGameIndexViewModel *)viewModel {
-    if (!_viewModel) {
-        _viewModel = [[QCGameIndexViewModel alloc] init];
-    }
-    return _viewModel;
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    QCGameUserDataModel *userData = [QCGameUserDataModel getUserData];
     
-    self.levelNumLabel.text = self.viewModel.controllerLevelTitle;
+    self.levelNumLabel.text = SF(@"第%ld关",userData.emojiLevelNum + 1);
+    
+    if (userData.musicGameUnlock) {
+        self.musicLevelLabel.text = SF(@"第%ld关",userData.musicLevelNum + 1);
+    }
 }
 
 - (void)viewDidLoad {

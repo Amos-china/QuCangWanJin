@@ -23,7 +23,7 @@ typedef void(^SelectSubmitTitleCallBack)(QCFeedBackItemModel *selectModel);
 - (NSInteger)tableViewRows;
 - (QCFeedBackItemModel *)tableViewItemWithRow:(NSInteger)row;
 - (void)tableViewSelectItemWithRow:(NSInteger)row;
-- (void)selectImageWithBase64:(NSString *)base64;
+- (void)selectImageWithimageData:(NSData *)imageData;
 - (void)deleteImage;
 
 - (void)submitWithContent:(NSString *)content

@@ -102,13 +102,13 @@ static const NSInteger MAXTIME = 20;
         if (indexModel.user_info.status == 1) {
             if (!indexModel.ad_fj.sp_fj) {
                 if (indexModel.ad_fj.video_is_max) {
-                    [weakSelf showToast:@"当天视频次数已达上限"];
+                    [weakSelf showToast:indexModel.ad_fj.ad_fj_ts];
                 }else {
                     [weakSelf dismissHUD];
                     videoStatus();
                 }
             }else {
-                [weakSelf showToast:@"账号异常,暂无视频"];
+                [weakSelf showToast:indexModel.ad_fj.ad_fj_ts];
             }
         }else {
             NSString *text = @"账号异常,限制登录";
@@ -143,7 +143,7 @@ static const NSInteger MAXTIME = 20;
     }];
     
     if (!isShow) {
-        [self showToast:@"暂无广告"];
+        [self showToast:@"暂无视频,请稍后再试"];
     }else {
         [ThreadUtils onUiThreadDelay:0.5 onCompletion:^{
             [self showCustomToast:@"观看完整视频\n下载安装广告中产品\n体验20秒提现"];

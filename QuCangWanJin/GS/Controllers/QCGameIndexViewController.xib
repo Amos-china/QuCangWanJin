@@ -45,8 +45,8 @@
                                 <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="vS7-i6-Ajs"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="看图猜歌名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekn-SS-DeR">
-                            <rect key="frame" x="146.33333333333334" y="9.3333333333333268" width="100.33333333333334" height="25.333333333333329"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="听歌识曲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekn-SS-DeR">
+                            <rect key="frame" x="156.33333333333334" y="9.3333333333333268" width="80.333333333333343" height="25.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -77,6 +77,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="ylX-UZ-67v" secondAttribute="bottom" constant="4" id="2iW-HW-J5S"/>
+                                <constraint firstItem="ylX-UZ-67v" firstAttribute="centerY" secondItem="zfL-qR-DtP" secondAttribute="centerY" id="35W-eQ-EEt"/>
                                 <constraint firstItem="wC4-Jd-C6g" firstAttribute="leading" secondItem="ylX-UZ-67v" secondAttribute="trailing" constant="6" id="M8M-O9-zmj"/>
                                 <constraint firstItem="ylX-UZ-67v" firstAttribute="leading" secondItem="zfL-qR-DtP" secondAttribute="leading" constant="10" id="Uar-gg-EA1"/>
                                 <constraint firstAttribute="trailing" secondItem="wC4-Jd-C6g" secondAttribute="trailing" constant="10" id="irt-Qw-4Rt"/>

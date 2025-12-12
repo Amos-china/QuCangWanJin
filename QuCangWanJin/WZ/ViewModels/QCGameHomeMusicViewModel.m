@@ -316,7 +316,11 @@ static NSString *const k_mmkv_collect_min_num = @"k_mmkv_collect_min_num";
             QCAdDownloadConfig *config = [self getAdDownloadConfig];
             if (config) {
                 if (config.xjhb_status) {
-                    return config.sy_num;
+                    if (config.sy_num) {
+                        NSArray<NSString *> *nums = [config.pop_config componentsSeparatedByString:@"&"];
+                        NSInteger firstNum = [nums.firstObject integerValue];
+                        return self.lookVideoNum >= firstNum;
+                    }
                 }
             }
         }

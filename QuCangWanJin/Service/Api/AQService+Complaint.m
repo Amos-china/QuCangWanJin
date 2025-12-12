@@ -12,20 +12,19 @@
 
 + (void)requestComplaintTypeId:(NSInteger)typeId
                        content:(NSString *)content
-                           pic:(NSString *)pic
+                           pic:(NSData *)pic
                        success:(QCHTTPRequestResponseSuccessBlock)success
                          error:(QCHTTPRequestResponseErrorBlock)error {
     NSDictionary *param;
-    if (pic.length) {
+    if (pic) {
         param = @{@"type_id": SF(@"%ld",typeId),
                   @"content": content,
-                  @"pic": pic};
+                  @"pic": @""};
     }else {
        param = @{@"type_id": SF(@"%ld",typeId),
                  @"content": content};
     }
-     
-    [self appApiRequestWithApi:@"complaint/doComplaint" param:param success:success failure:error];
+    [self appApiUploadImageWithApi:@"complaint/feedback" param:param imageData:pic success:success failure:error];
 }
 
 

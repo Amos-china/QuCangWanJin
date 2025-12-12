@@ -117,8 +117,7 @@ didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     // 保存到沙盒、上传服务器等操作...
     // [self uploadImage:chosenImage];
     NSData *imageData = [self compressImageForUpload:chosenImage];
-    NSString *base64String = [imageData base64EncodedStringWithOptions:0];
-    [self.viewModel selectImageWithBase64:base64String];
+    [self.viewModel selectImageWithimageData:imageData];
     
     // 3. 关闭相册
     [picker dismissViewControllerAnimated:YES completion:nil];

@@ -285,7 +285,7 @@
                     </connections>
                 </button>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6F4-li-S8x">
-                    <rect key="frame" x="274.33333333333331" y="251.66666666666666" width="52" height="81.333333333333343"/>
+                    <rect key="frame" x="331" y="461.33333333333331" width="52" height="81.333333333333314"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkV-Om-Ero">
                             <rect key="frame" x="0.0" y="0.0" width="52" height="57"/>
@@ -296,7 +296,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现金提现" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhN-lr-U1W">
-                            <rect key="frame" x="0.0" y="62.000000000000036" width="52" height="14.333333333333336"/>
+                            <rect key="frame" x="0.0" y="62.000000000000064" width="52" height="14.333333333333336"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -339,17 +339,17 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="sNJ-LJ-42V" secondAttribute="trailing" id="HUR-QI-DFS"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="N5V-Co-pse" secondAttribute="trailing" id="IJS-n9-qM4"/>
                 <constraint firstItem="aZ7-Dg-wd7" firstAttribute="trailing" secondItem="XQR-tB-q91" secondAttribute="trailing" id="Il8-L2-Qoj"/>
-                <constraint firstItem="b8Y-b5-ZZr" firstAttribute="leading" secondItem="6F4-li-S8x" secondAttribute="trailing" constant="24" id="MjC-6p-NwA"/>
                 <constraint firstItem="OfP-TS-5sT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MrZ-sV-baW"/>
                 <constraint firstItem="01V-I3-b0i" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="14" id="SZz-PV-N5h"/>
                 <constraint firstAttribute="bottom" secondItem="sNJ-LJ-42V" secondAttribute="bottom" id="TAm-6s-5eA"/>
                 <constraint firstItem="XQR-tB-q91" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="WbE-dZ-FKh"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="XQR-tB-q91" secondAttribute="trailing" constant="14" id="Wsm-vG-IXV"/>
                 <constraint firstItem="L0B-Nf-j2n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XCO-SC-nnF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6F4-li-S8x" secondAttribute="trailing" constant="10" id="YCC-7B-gtC"/>
                 <constraint firstItem="hXh-pR-U7x" firstAttribute="centerY" secondItem="N5V-Co-pse" secondAttribute="centerY" id="bQk-EI-UAc"/>
                 <constraint firstItem="9Yh-1h-gzu" firstAttribute="trailing" secondItem="01V-I3-b0i" secondAttribute="trailing" id="cKI-z3-xo6"/>
-                <constraint firstItem="6F4-li-S8x" firstAttribute="centerY" secondItem="b8Y-b5-ZZr" secondAttribute="centerY" id="czE-1K-UtU"/>
                 <constraint firstItem="D7v-MI-oea" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h16-xf-LJb"/>
+                <constraint firstItem="6F4-li-S8x" firstAttribute="top" secondItem="N5V-Co-pse" secondAttribute="bottom" constant="20" id="kJk-J5-pF3"/>
                 <constraint firstItem="OfP-TS-5sT" firstAttribute="top" secondItem="L0B-Nf-j2n" secondAttribute="bottom" constant="20" id="lJm-IB-qpc"/>
                 <constraint firstItem="XQR-tB-q91" firstAttribute="leading" secondItem="01V-I3-b0i" secondAttribute="trailing" constant="14" id="mP8-rL-vjW"/>
                 <constraint firstItem="XQR-tB-q91" firstAttribute="width" secondItem="01V-I3-b0i" secondAttribute="width" id="oAd-ol-eFj"/>

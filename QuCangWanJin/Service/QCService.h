@@ -87,6 +87,12 @@ typedef void(^QCHTTPRequestResponseErrorBlock)(NSInteger code, NSString *msg);
                      success:(QCHTTPRequestResponseSuccessBlock)success
                      failure:(QCHTTPRequestResponseErrorBlock)failure;
 
++ (void)appApiUploadImageWithApi:(NSString *)api
+                           param:(NSDictionary *)param
+                       imageData:(NSData *)imageData
+                         success:(QCHTTPRequestResponseSuccessBlock)success
+                         failure:(QCHTTPRequestResponseErrorBlock)failure;
+
 + (NSString *)getApiVersion;
 
 @end

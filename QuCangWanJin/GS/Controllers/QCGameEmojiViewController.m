@@ -1,117 +1,97 @@
-#import "QCGameIndexViewController.h"
+//
+//  QCGameEmojiViewController.m
+//  QuCangWanJin
+//
+//  Created by 陈志远 on 2025/12/12.
+//
+
+#import "QCGameEmojiViewController.h"
+#import "QCGameEmojiViewModel.h"
 #import "QCGameIndexPopupViewController.h"
-#import "QCGameIndexViewModel.h"
-#import "QCGameIndexViewController+Audio.h"
-@interface QCGameIndexViewController ()
+
+@interface QCGameEmojiViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *pointsView;
 @property (weak, nonatomic) IBOutlet UILabel *pointsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
-@property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UILabel *levelNumLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emojiLabel;
 @property (weak, nonatomic) IBOutlet UIButton *oneButton;
 @property (weak, nonatomic) IBOutlet UIButton *twoButton;
 @property (weak, nonatomic) IBOutlet UIButton *threeButton;
 @property (weak, nonatomic) IBOutlet UIButton *fourButton;
-@property (nonatomic, strong) QCGameIndexViewModel *viewModel;
 
-@property (nonatomic, copy) NSArray<UIButton *> *optionButtons;
+@property (nonatomic, copy) NSArray<UIButton *> *answerButtons;
+@property (nonatomic, strong) QCGameEmojiViewModel *viewModel;
 
 @end
 
-@implementation QCGameIndexViewController
+@implementation QCGameEmojiViewController
 
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    self.pointsLabel.text = self.viewModel.getCurrentPoints;
-    self.levelLabel.text = self.viewModel.controllerLevelTitle;
-    
-    [self playerPlay];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self playerPause];
+- (QCGameEmojiViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [[QCGameEmojiViewModel alloc] init];
+    }
+    return _viewModel;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     CGFloat height = (IMG(@"gsb_game_top_ej").size.height + 8.f) / 2;
     ViewRadius(self.pointsView, height);
     
+    self.answerButtons = @[self.oneButton,self.twoButton,self.threeButton,self.fourButton];
     
-    [[QCAdManager sharedInstance] loadRewardVideoAd];
-    
-    self.viewModel = [[QCGameIndexViewModel alloc] init];
-    
-    self.optionButtons = @[
-        self.oneButton,
-        self.twoButton,
-        self.threeButton,
-        self.fourButton
-    ];
-    
-    [self resetButtons];
-    
-    self.pointsLabel.text = self.viewModel.getCurrentPoints;
-    self.levelLabel.text = self.viewModel.controllerLevelTitle;
-    
-    [self createSession];
-    
-    [self playAudioWithURLString:self.viewModel.getCurrentLevelGameMusicModel.url];
+    [self configSubViews];
 }
 
-- (void)resetButtons {
-    for (int i = 0; i < self.optionButtons.count; i ++) {
-        UIButton *button = self.optionButtons[i];
-        NSString *buttonTitle = [self.viewModel buttonTitleAtIndex:i];
-        [button setTitle:buttonTitle forState:UIControlStateNormal];
-        [button setBackgroundColor:[UIColor whiteColor]];
+- (void)configSubViews {
+    self.pointsLabel.text = self.viewModel.getCurrentPoints;
+    self.levelNumLabel.text = self.viewModel.controllerLevelTitle;
+    self.emojiLabel.text = self.viewModel.emojiImage;
+    
+    [self configButtons];
+}
+
+- (void)configButtons {
+    for (int i = 0; i < self.answerButtons.count; i++) {
+        NSString *option = [self.viewModel buttonTitleAtIndex:i];
+        UIButton *button = self.answerButtons[i];
+        [button setTitle:option forState:UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button setBackgroundColor:[UIColor whiteColor]];
     }
 }
 
 - (IBAction)oneButtonAction:(UIButton *)sender {
-    [self clossedButtonAtindex:0];
+    [self selectButtonWithIndex:0];
 }
 
 - (IBAction)twoButtonAction:(UIButton *)sender {
-    [self clossedButtonAtindex:1];
+    [self selectButtonWithIndex:1];
 }
 
 - (IBAction)threeButtonAction:(UIButton *)sender {
-    [self clossedButtonAtindex:2];
+    [self selectButtonWithIndex:2];
 }
 
 - (IBAction)fourButtonAction:(UIButton *)sender {
-    [self clossedButtonAtindex:3];
+    [self selectButtonWithIndex:3];
 }
 
-- (void)clossedButtonAtindex:(NSInteger)index {
-//    BOOL isRight = [self.viewModel checkOptionIsRightAtIndex:index];
-//    NSString *colorHex = isRight ? @"#2DC92B" : @"#FF5950";
-//    UIColor *buttonColor = [UIColor colorWithHexString:colorHex];
-    
+- (void)selectButtonWithIndex:(NSInteger)index {
+    [self configButtons];
     self.viewModel.selectIndex = index;
-    
-    [self resetButtons];
-    
-    UIButton *button = self.optionButtons[index];
-//    [button setBackgroundColor:buttonColor];
-//    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    
-    [button setBackgroundColor:[UIColor colorWithHexString:@"#2DC92B"]];
+    UIButton *button = self.answerButtons[index];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor colorWithHexString:@"#2DC92B"]];
 }
 
 - (IBAction)backButtonAction:(id)sender {
     [self popViewController];
 }
 
-- (IBAction)submitButtonActio:(id)sender {
+- (IBAction)submitButtonAction:(id)sender {
     if (self.viewModel.selectIndex == -1) {
         [self showToast:@"请选择你的答案,再点击提交"];
         return;
@@ -122,10 +102,10 @@
     [self showGameIndexPopupController:popupType];
 }
 
-- (IBAction)resetButtonAction:(id)sender {
+- (IBAction)restButtonAction:(id)sender {
     __weak typeof(self) weakSelf = self;
     [self showRewardVideoMsg:@"本关不可以重选" completionHandler:^(QCAdEcpmInfoModel * _Nonnull ecpmInfoModel) {
-        [weakSelf resetButtons];
+        [weakSelf configButtons];
         [weakSelf.viewModel reset];
     }];
 }
@@ -133,9 +113,8 @@
 - (IBAction)iderButtonAction:(id)sender {
     __weak typeof(self) weakSelf = self;
     [self showRewardVideoMsg:@"本关不可以没有提示" completionHandler:^(QCAdEcpmInfoModel * _Nonnull ecpmInfoModel) {
-        [weakSelf resetButtons];
         NSInteger index = [weakSelf.viewModel ider];
-        [weakSelf clossedButtonAtindex:index];
+        [weakSelf selectButtonWithIndex:index];
     }];
 }
 
@@ -147,13 +126,10 @@
         }else {
             [weakSelf showToast:@"观看整条视频才有效哦~"];
         }
-        [weakSelf playerPlay];
     }];
     
     if (!show) {
         [self showToast:msg];
-    }else {
-        [self playerPause];
     }
 }
 
@@ -164,17 +140,17 @@
     popupVc.actionCallBack = ^(NSInteger index) {
         if (index == 1) {
             //重选
-            [weakSelf resetButtons];
+            [weakSelf configButtons];
             [weakSelf.viewModel reset];
         }else {
             //下一关
             [weakSelf.viewModel nextLevel];
-            [weakSelf resetButtons];
-            [weakSelf playAudioWithURLString:weakSelf.viewModel.getCurrentLevelGameMusicModel.url];
-            weakSelf.levelLabel.text = weakSelf.viewModel.controllerLevelTitle;
+            [weakSelf configSubViews];
+            
         }
     };
     [self presenClearColorPopupController:popupVc];
 }
+
 
 @end

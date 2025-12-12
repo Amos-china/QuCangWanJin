@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSDictionary *)requestDefaultParam;
 + (NSDictionary *)mergeRequestParameters:(NSDictionary *)param;
 + (NSString *)nowTimeInterval;
++ (NSString *)requestParamToRSAJson:(NSDictionary *)param ;
 
 
 @end

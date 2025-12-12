@@ -11,7 +11,7 @@
 
 @property (nonatomic, strong) QCFeedBackRootModel *rootModel;
 @property (nonatomic, strong) QCFeedBackItemModel *selectItemModel;
-@property (nonatomic, copy) NSString *base64Image;
+@property (nonatomic, copy) NSData *imageData;
 
 @end
 
@@ -48,12 +48,12 @@
     self.selectItemModel.select = YES;
 }
 
-- (void)selectImageWithBase64:(NSString *)base64 {
-    self.base64Image = base64;
+- (void)selectImageWithimageData:(NSData *)imageData {
+    self.imageData = imageData;
 }
 
 - (void)deleteImage {
-    self.base64Image = @"";
+    self.imageData = nil;
 }
 
 - (BOOL)checkItemModel {
@@ -65,7 +65,7 @@
                     error:(QCHTTPRequestResponseErrorBlock)error {
     [QCService requestComplaintTypeId:self.selectItemModel.complaintId
                               content:content
-                                  pic:self.base64Image
+                                  pic:self.imageData
                               success:^(id  _Nonnull data) {
         success();
     } error:error];

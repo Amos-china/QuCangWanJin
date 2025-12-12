@@ -117,6 +117,17 @@ uwIDAQAB\
     return [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
 }
 
++ (NSString *)requestParamToRSAJson:(NSDictionary *)param {
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:param
+                                                       options:(NSJSONWritingOptions) 0
+                                                         error:&error];
+    NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    NSLog(@"请求参数--->%@",jsonStr);
+    jsonStr = [RSA encryptString:jsonStr publicKey:pubkey];
+    return jsonStr;
+}
+
 
 + (NSData *)requestParamToData:(NSDictionary *)param  {
     NSError *error;
